@@ -1,0 +1,14 @@
+﻿@model ProjektZaliczeniowyASP.NET.Models.KursModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>KursModel</h4>
+    <partial name="~/Views/Shared/_Partials/_KursForm.cshtml" model="Model" />
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

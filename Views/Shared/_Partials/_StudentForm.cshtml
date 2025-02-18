@@ -1,0 +1,25 @@
+﻿@model ProjektZaliczeniowyASP.NET.Models.StudentModel
+
+<form asp-action="@(Model.Id > 0 ? "Edit" : "Create")" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Imie" class="control-label"></label>
+        <input asp-for="Imie" class="form-control" />
+        <span asp-validation-for="Imie" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Nazwisko" class="control-label"></label>
+        <input asp-for="Nazwisko" class="form-control" />
+        <span asp-validation-for="Nazwisko" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Zapisz</button>
+    <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</form>
