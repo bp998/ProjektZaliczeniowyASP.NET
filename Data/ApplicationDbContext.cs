@@ -15,7 +15,18 @@ namespace ProjektZaliczeniowyASP.NET.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Konfiguracja Many-to-Many
+            modelBuilder.Entity<StudentModel>()
+                .Property(s => s.Id)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<KursModel>()
+                .Property(k => k.Id)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<ZapisNaKursModel>()
+                .Property(z => z.Id)
+                .ValueGeneratedOnAdd();
+
             modelBuilder.Entity<ZapisNaKursModel>()
                 .HasOne(z => z.Student)
                 .WithMany(s => s.ZapisaneKursy)

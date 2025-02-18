@@ -6,6 +6,6 @@
         public string Nazwa { get; set; }
         public string Opis { get; set; }
 
-        public List<ZapisNaKursModel> ZapisaniStudenci { get; set; }
+        public List<ZapisNaKursModel>? ZapisaniStudenci { get; set; } = new List<ZapisNaKursModel>();
     }
 }

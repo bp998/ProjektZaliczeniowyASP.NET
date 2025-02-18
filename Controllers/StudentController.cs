@@ -34,6 +34,10 @@ namespace ProjektZaliczeniowyASP.NET.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+            {
+                Console.WriteLine("Błąd walidacji: " + error.ErrorMessage);
+            }
             return View(student);
         }
 
@@ -53,6 +57,7 @@ namespace ProjektZaliczeniowyASP.NET.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(student);
         }
 
