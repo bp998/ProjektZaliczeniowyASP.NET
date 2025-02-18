@@ -17,6 +17,7 @@ namespace ProjektZaliczeniowyASP.NET.Models
         public int KursId { get; set; }
         public KursModel? Kurs { get; set; }
         [Required]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime DataZapisu { get; set; }
     }
 }

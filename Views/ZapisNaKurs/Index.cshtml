@@ -40,7 +40,7 @@
                 @Html.DisplayFor(modelItem => item.Kurs.Nazwa)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DataZapisu.ToShortTimeString())
+                @Html.DisplayFor(modelItem => item.DataZapisu.Date)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
