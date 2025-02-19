@@ -1,0 +1,5 @@
+﻿@ProjektZaliczeniowyASP.NET_HostAddress = http://localhost:5169
+
+GET {{ProjektZaliczeniowyASP.NET_HostAddress}}/api/kursapi
+
+###

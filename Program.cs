@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ProjektZaliczeniowyASP.NET.Data;
+using ProjektZaliczeniowyASP.NET.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+// middleware do logwania zapytań HTTP. Więcej szczegółów w pliku Middleware/RequestLoggingMiddleware.cs
+app.UseMiddleware<RequestLoggingMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
