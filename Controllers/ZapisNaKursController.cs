@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProjektZaliczeniowyASP.NET.Data;
@@ -6,6 +7,7 @@ using ProjektZaliczeniowyASP.NET.Models;
 
 namespace ProjektZaliczeniowyASP.NET.Controllers
 {
+    [Authorize]
     public class ZapisNaKursController : Controller
     {
         private readonly ApplicationDbContext _context;

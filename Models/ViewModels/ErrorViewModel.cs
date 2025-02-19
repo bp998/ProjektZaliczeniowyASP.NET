@@ -1,4 +1,4 @@
-namespace ProjektZaliczeniowyASP.NET.Models
+namespace ProjektZaliczeniowyASP.NET.ViewModels
 {
     public class ErrorViewModel
     {

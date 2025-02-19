@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ProjektZaliczeniowyASP.NET.Models;
+using ProjektZaliczeniowyASP.NET.ViewModels;
 using System.Diagnostics;
 
 namespace ProjektZaliczeniowyASP.NET.Controllers
