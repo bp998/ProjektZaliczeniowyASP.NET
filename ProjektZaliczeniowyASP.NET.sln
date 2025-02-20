@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjektZaliczeniowyASP.NET", "ProjektZaliczeniowyASP.NET.csproj", "{F1BBF199-9E70-44AF-A7B1-9B571B7EE0E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjektZaliczeniowyASP.NET", "ProjektZaliczeniowyASP.NET.csproj", "{F1BBF199-9E70-44AF-A7B1-9B571B7EE0E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "..\TestProject\TestProject.csproj", "{5FA53C3E-C913-4D86-9D19-DFC6FDFEE2D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F1BBF199-9E70-44AF-A7B1-9B571B7EE0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1BBF199-9E70-44AF-A7B1-9B571B7EE0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1BBF199-9E70-44AF-A7B1-9B571B7EE0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA53C3E-C913-4D86-9D19-DFC6FDFEE2D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA53C3E-C913-4D86-9D19-DFC6FDFEE2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA53C3E-C913-4D86-9D19-DFC6FDFEE2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA53C3E-C913-4D86-9D19-DFC6FDFEE2D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
